@@ -30,16 +30,16 @@ public:
     bool getIsInShoppingList() const;
     void setIsInShoppingList(bool);
 
-    int getNumberUse() const;
-    void setNumberUse(int);
+    int getNumberOfUses() const;
+    void setNumberOfUses(int);
 
-    void reduceNumberUse();
+    void reduceNumberOfUses();
 
 private:
     string name = "";
     int quantity = 0;
     bool isInShoppingList = false;
-    int numberUse = 0;
+    int numberOfUses = 0;
 };
 
 bool operator<(const Item&, const Item&);

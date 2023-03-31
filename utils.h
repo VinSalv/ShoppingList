@@ -133,7 +133,7 @@ void write_file_from(string nameFile, set<Type> container){
     ofstream *outFile = new ofstream(nameFile);
     if (outFile->is_open()){
         for (const auto& obj : container)
-            *outFile << obj.getName() << " " << obj.getQuantity() << " " << obj.getIsInShoppingList() << " " << obj.getNumberUse() << endl;
+            *outFile << obj.getName() << " " << obj.getQuantity() << " " << obj.getIsInShoppingList() << " " << obj.getNumberOfUses() << endl;
         outFile->close();
     } else
         cerr << "Error opening file for writing." << endl;

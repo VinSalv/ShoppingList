@@ -42,18 +42,18 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWi
                 // Init the item to update items container
                 updatedItem.setName(iteratorItems.getName());
 
-                int number_of_quantities = iteratorItems.getQuantity();
-                bool number_of_quantities_exceed_limit = number_of_quantities >= maxNumberOfUse;
-                if (number_of_quantities_exceed_limit)
+                int quantity = iteratorItems.getQuantity();
+                bool quantityExceedLimit = quantity >= maxNumberOfUse;
+                if (quantityExceedLimit)
                     updatedItem.setQuantity(maxNumberOfQuantity);
                 else
-                    updatedItem.setQuantity(++number_of_quantities);
+                    updatedItem.setQuantity(++quantity);
 
                 updatedItem.setIsInShoppingList(true);
 
-                int number_of_uses = iteratorItems.getNumberUse();
-                numberOfUsesExceedLimit = number_of_uses >= maxNumberOfUse;
-                updatedItem.setNumberUse(++number_of_uses);
+                int numberOfUses = iteratorItems.getNumberOfUses();
+                numberOfUsesExceedLimit = numberOfUses >= maxNumberOfUse;
+                updatedItem.setNumberOfUses(++numberOfUses);
 
                 break;
             }
@@ -71,7 +71,7 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWi
             set<Item> editedItems{};
             for (const Item& item :items){
                 Item copyItem = item;
-                copyItem.reduceNumberUse();
+                copyItem.reduceNumberOfUses();
                 editedItems.emplace(copyItem);
             }
             items.clear();
@@ -277,7 +277,7 @@ QWidget* generate_widget_item_from(set<Item>& items,  string nameItem, int quant
                 updatedItem.setName(iteratorItems.getName());
                 updatedItem.setQuantity(0);
                 updatedItem.setIsInShoppingList(true);
-                updatedItem.setNumberUse(iteratorItems.getNumberUse());
+                updatedItem.setNumberOfUses(iteratorItems.getNumberOfUses());
 
                 break;
             }
@@ -318,7 +318,7 @@ QWidget* generate_widget_item_from(set<Item>& items,  string nameItem, int quant
                 updatedItem.setName(iteratorItems.getName());
                 updatedItem.setQuantity(0);
                 updatedItem.setIsInShoppingList(false);
-                updatedItem.setNumberUse(iteratorItems.getNumberUse());
+                updatedItem.setNumberOfUses(iteratorItems.getNumberOfUses());
 
                 break;
             }
@@ -338,6 +338,7 @@ QWidget* generate_widget_item_from(set<Item>& items,  string nameItem, int quant
             widgetCheckBox->setEnabled(false);
 
             // Set widgetSpinBox's style
+            widgetSpinBox->setValue(0);
             widgetSpinBox->setEnabled(false);
 
             // Set widgetDeleteButton's style
@@ -364,7 +365,7 @@ QWidget* generate_widget_item_from(set<Item>& items,  string nameItem, int quant
                 updatedItem.setName(iteratorItems.getName());
                 updatedItem.setQuantity(widgetSpinBox->value());
                 updatedItem.setIsInShoppingList(true);
-                updatedItem.setNumberUse(iteratorItems.getNumberUse());
+                updatedItem.setNumberOfUses(iteratorItems.getNumberOfUses());
 
                 break;
             }
@@ -419,7 +420,7 @@ void update_frequently_used_list(QListWidget* listWidgetItemsFrequentlyUsed, set
     // Set a vector containing stored items sorted by items' number of use
     vector<Item> itemsSortedByNumberOfUse(items.begin(), items.end());
     sort(itemsSortedByNumberOfUse.begin(), itemsSortedByNumberOfUse.end(), [](const Item& item1, const Item& item2) {
-        return item1.getNumberUse() > item2.getNumberUse();
+        return item1.getNumberOfUses() > item2.getNumberOfUses();
     });
 
     // Set a bound of items to show

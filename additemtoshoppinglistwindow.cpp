@@ -54,18 +54,18 @@ void AddItemToShoppingListWindow::on_dialogButtonBox_accepted(){
                 // Init the item to update items container
                 updatedItem.setName(iteratorItems.getName());
 
-                int number_of_quantities = iteratorItems.getQuantity();
-                bool number_of_quantities_exceed_limit = number_of_quantities >= maxNumberOfUse;
-                if (number_of_quantities_exceed_limit)
+                int quantity = iteratorItems.getQuantity();
+                bool quantityExceedLimit = quantity >= maxNumberOfUse;
+                if (quantityExceedLimit)
                     updatedItem.setQuantity(maxNumberOfQuantity);
                 else
-                    updatedItem.setQuantity(++number_of_quantities);
+                    updatedItem.setQuantity(++quantity);
 
                 updatedItem.setIsInShoppingList(true);
 
-                int number_of_uses = iteratorItems.getNumberUse();
-                numberOfUsesExceedLimit = number_of_uses >= maxNumberOfUse;
-                updatedItem.setNumberUse(++number_of_uses);
+                int numberOfUses = iteratorItems.getNumberOfUses();
+                numberOfUsesExceedLimit = numberOfUses >= maxNumberOfUse;
+                updatedItem.setNumberOfUses(++numberOfUses);
 
                 break;
             }
@@ -83,7 +83,7 @@ void AddItemToShoppingListWindow::on_dialogButtonBox_accepted(){
             set<Item> editedItems{};
             for (const Item& item :items){
                 Item copyItem = item;
-                copyItem.reduceNumberUse();
+                copyItem.reduceNumberOfUses();
                 editedItems.emplace(copyItem);
             }
             items.clear();

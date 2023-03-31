@@ -255,7 +255,7 @@ QWidget* generate_widget_item_from(set<Item>& items, string nameItem){
                     item.setName(new_name);
                     item.setQuantity(iteratorItems->getQuantity());
                     item.setIsInShoppingList(iteratorItems->getIsInShoppingList());
-                    item.setNumberUse(iteratorItems->getNumberUse());
+                    item.setNumberOfUses(iteratorItems->getNumberOfUses());
 
                     // Update items container
                     items.emplace(item);

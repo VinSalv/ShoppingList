@@ -21,7 +21,7 @@ Item::Item(string name){
     this->name = name;
 }
 
-Item::Item(string name, int quantity, bool isInShoppingList, int numberUse) : quantity(quantity), isInShoppingList(isInShoppingList), numberUse(numberUse){
+Item::Item(string name, int quantity, bool isInShoppingList, int numberOfUses) : quantity(quantity), isInShoppingList(isInShoppingList), numberOfUses(numberOfUses){
     name = to_lowercase_from(name);
     name = remove_initial_spaces_from(name);
     name = remove_final_spaces_from(name);
@@ -57,19 +57,19 @@ void Item::setIsInShoppingList(bool isInShoppingList){
     this->isInShoppingList = isInShoppingList;
 }
 
-int Item::getNumberUse() const{
-    return numberUse;
+int Item::getNumberOfUses() const{
+    return numberOfUses;
 }
 
-void Item::setNumberUse(int numberUse){
-    this->numberUse = numberUse;
+void Item::setNumberOfUses(int numberOfUses){
+    this->numberOfUses = numberOfUses;
 }
 
-void Item::reduceNumberUse(){
+void Item::reduceNumberOfUses(){
     try {
-        numberUse = numberUse/2;
+        numberOfUses = numberOfUses/2;
     } catch (...) {
-        numberUse = 0;
+        numberOfUses = 0;
     }
 }
 
