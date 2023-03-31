@@ -31,12 +31,22 @@ It has been realized 5 classes:
 
 # Interface
 Shopping list
+<p align="center">
 ![1](https://user-images.githubusercontent.com/45711698/229205258-67b127f4-eda5-4348-8086-ab4257bc5524.png)
+</p>
 Stored Item
+<p align="center">
 ![2](https://user-images.githubusercontent.com/45711698/229205260-b9efa084-29b2-4596-94ec-32a2abe9c1f8.png)
+</p>
 Add Item to shopping list
+<p align="center">
 ![3](https://user-images.githubusercontent.com/45711698/229205263-9dcdf184-3aaa-49b9-add4-a8d8cdb693a7.png)
+</p>
 Face up with duplicates
-![5](https://user-images.githubusercontent.com/45711698/229205254-e053e780-3b2a-43ec-af91-ee06082019fa.png)
+<p align="center">
+![4](https://user-images.githubusercontent.com/45711698/229205254-e053e780-3b2a-43ec-af91-ee06082019fa.png)
+</p>
 About the creator
-![4](https://user-images.githubusercontent.com/45711698/229205268-fef6e05e-2fa9-422c-b61f-17024a42654e.png)
+<p align="center">
+![5](https://user-images.githubusercontent.com/45711698/229205268-fef6e05e-2fa9-422c-b61f-17024a42654e.png)
+</p>
