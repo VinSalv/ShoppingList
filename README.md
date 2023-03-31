@@ -41,11 +41,6 @@ It has been realized 5 classes:
  <img src="https://user-images.githubusercontent.com/45711698/229205260-b9efa084-29b2-4596-94ec-32a2abe9c1f8.png" />
 </p>
 
-### Add Item to shopping list
-<p align="center">
- <img src="https://user-images.githubusercontent.com/45711698/229205263-9dcdf184-3aaa-49b9-add4-a8d8cdb693a7.png" />
-</p>
-
 ### Edit stored item
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45711698/229205268-fef6e05e-2fa9-422c-b61f-17024a42654e.png" />
@@ -54,6 +49,11 @@ It has been realized 5 classes:
 ### Face up with duplicates
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45711698/229205254-e053e780-3b2a-43ec-af91-ee06082019fa.png" />
+</p>
+
+### Add Item to shopping list
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45711698/229205263-9dcdf184-3aaa-49b9-add4-a8d8cdb693a7.png" />
 </p>
 
 ### About the creator
