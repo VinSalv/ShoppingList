@@ -30,8 +30,13 @@ It has been realized 5 classes:
 - utils: constants and functions useful for other classes
 
 # Interface
+Shopping list
 ![1](https://user-images.githubusercontent.com/45711698/229205258-67b127f4-eda5-4348-8086-ab4257bc5524.png)
+Stored Item
 ![2](https://user-images.githubusercontent.com/45711698/229205260-b9efa084-29b2-4596-94ec-32a2abe9c1f8.png)
+Add Item to shopping list
 ![3](https://user-images.githubusercontent.com/45711698/229205263-9dcdf184-3aaa-49b9-add4-a8d8cdb693a7.png)
+Face up with duplicates
 ![5](https://user-images.githubusercontent.com/45711698/229205254-e053e780-3b2a-43ec-af91-ee06082019fa.png)
+About the creator
 ![4](https://user-images.githubusercontent.com/45711698/229205268-fef6e05e-2fa9-422c-b61f-17024a42654e.png)
