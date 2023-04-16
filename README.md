@@ -1,8 +1,8 @@
-# ShoppingList
-Implementation of ShoppingList by using Qt Creatpr IDE.
+# Shopping List
+Implementation of Shopping List by using Qt Creatpr IDE.
 
 ## Paths
-```.
+```
 |-- ShoppingList
 |   |-- Headers
 |   |   |-- additemtoshoppinglistwindow.h
@@ -22,7 +22,7 @@ Implementation of ShoppingList by using Qt Creatpr IDE.
 |   |   |-- storeditemswindow.ui
 |   |-- ShoppingList.pro
 ```
-It has been realized 5 classes:
+It has been realized by:
 - additemtoshoppinglistwindow: set a stored item in a shopping list
 - item: object item
 - mainwindow: show the list of item
