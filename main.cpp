@@ -3,9 +3,9 @@
  *
  *  @file main.cpp
  *
- *  @brief Start program.
+ *  @brief Start the program.
  *
- *  This file contains istructions to start program.
+ *  This file contains istructions to start the program.
  */
 
 #include "mainwindow.h"
