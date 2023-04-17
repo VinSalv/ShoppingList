@@ -1,5 +1,5 @@
 # Shopping List
-Implementation of Shopping List by using Qt Creatpr IDE.
+Implementation of Shopping List by using Qt Creator IDE.
 
 ## Paths
 ```
